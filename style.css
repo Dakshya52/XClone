@@ -1,0 +1,15 @@
+.middle{
+    width: 1950px;
+}
+
+.following .blue-bar{
+    width: 76px;
+    position: relative;
+    bottom: -8px;
+}
+
+.for-you .blue-bar{
+    position: relative;
+    bottom: -8px;
+}
+

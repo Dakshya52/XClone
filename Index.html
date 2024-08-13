@@ -5,10 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 </head>
 <body class="bg-black">
     <div class="flex flex-row justify-center mx-auto container">
-        <div class="left flex flex-col w-full text-white gap-4 pr-4">
+        <div class="left flex flex-col text-white gap-4 pr-4 w-1/4">
             <svg  viewBox="0 0 24 24" aria-hidden="true" fill="white"  class="r-4qtqp9 w-12 r-yyyyoo pl-4 r-dnmrzs r-bnwqim mt-3 r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
             <ul class="nav font-bold text-white-700 flex flex-col font-color-x gap-2 text-xl">
                 <li ><div class="flex w-fit flex-row gap-4 pl-4 pr-4 pt-2 pb-2 cursor-pointer hover:bg-neutral-900 hover:rounded-3xl"><svg viewBox="0 0 24 24" aria-hidden="true" fill="white" class="r-4qtqp9 w-7 r-yyyyoo r-dnmrzs r-bnwqim r-lrvibr r-m6rgpd r-1nao33i r-lwhw9o r-cnnz9e"><g><path d="M21.591 7.146L12.52 1.157c-.316-.21-.724-.21-1.04 0l-9.071 5.99c-.26.173-.409.456-.409.757v13.183c0 .502.418.913.929.913H9.14c.51 0 .929-.41.929-.913v-7.075h3.909v7.075c0 .502.417.913.928.913h6.165c.511 0 .929-.41.929-.913V7.904c0-.301-.158-.584-.408-.758z"></path></g></svg>Home</div></li>
@@ -41,6 +43,7 @@
                     <path d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z" stroke="currentColor" stroke-width="1.5" />
                 </svg>
+                
                 <div><div class="font-bold ">Dakshya Chauhan </div>
                     <div class="font-medium text-base text-zinc-700">@Baluck67</div>
                     
@@ -48,8 +51,56 @@
                 
             </div>
         </div>
-        <div class="middle w-full text-white border-x-stone-600 ">
-            main
+        <div class="middle ml-9 text-white border-x-stone-600 border-2 border-t-0 border-b-0 h-screen flex flex-col">
+            <div class="header flex border-b-stone-600 border-2 border-t-0 border-l-0 border-r-0 font-bold text-base text-center min-h-12">
+                <div class="for-you w-1/2 flex flex-col text-stone-500 align-middle cursor-pointer hover:bg-neutral-900 hover:text-white pt-3 pb-3">
+                    For you
+                    <div class="blue-bar self-center hidden bg-cyan-500 w-14 rounded-full h-1"></div>
+                </div>
+                <div class="following w-1/2 flex flex-col text-stone-500 align-middle cursor-pointer hover:bg-neutral-900 hover:text-white pt-3 pb-3">
+                    Following
+                    <div class="blue-bar  self-center hidden bg-cyan-500 rounded-full h-1"></div>
+                </div>
+            </div>
+            <div class="create-post flex flex-col border-l-0 border-r-0 border-t-0 border-b-stone-600 border-2 ">
+                <div class="what-happening flex flex-row ml-4 gap-2 mt-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" color="white" fill="gray" class="bg-white rounded-full">
+                    <path d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z" stroke="currentColor" stroke-width="1.5" />
+                </svg> <input class="text-stone-300 border-none text-xl  font-medium bg-black" type="text" placeholder="What is happening?!"> </div>
+                <div class="attachment mt-6 flex flex-row ml-14 gap-60">
+                    <div class="flex flex-row gap-4">
+                        <span class="material-symbols-outlined  text-cyan-500">
+                            photo
+                            </span>
+                        <span class="material-symbols-outlined text-cyan-500">
+                            gif_box
+                            </span>
+                        <span class="material-symbols-outlined text-cyan-500">
+                            ballot
+                            </span>
+                        <span class="material-symbols-outlined text-cyan-500">
+                            mood
+                            </span>
+                        <span class="material-symbols-outlined text-cyan-500">
+                            calendar_clock
+                            </span>
+                        <span class="material-symbols-outlined text-cyan-500">
+                            location_on
+                            </span>
+                        
+                    </div>
+                    <button class="bg-cyan-500 border-none rounded-full w-fit pt-1 pb-1 pl-4 pr-4 text-mediumfont-bold text-white font-bold mb-5 hover:bg-teal-600"> 
+                        Post
+                    </button>
+                </div>
+            </div>
+            <div class="setup-profile">
+
+            </div>
+            <div class="premium">
+
+            </div>
+
         </div>
         <div class="right w-full text-white">
             right
