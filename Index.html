@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0" />
 </head>
 <body class="bg-black">
-    <div class="flex flex-row justify-center mx-auto container">
+    <div class="flex flex-row justify-center mx-auto container ">
         <div class="left flex flex-col text-white gap-4 pr-4 w-1/4">
             <svg  viewBox="0 0 24 24" aria-hidden="true" fill="white"  class="r-4qtqp9 w-12 r-yyyyoo pl-4 r-dnmrzs r-bnwqim mt-3 r-lrvibr r-m6rgpd r-lrsllp r-1nao33i r-16y2uox r-8kz0gk"><g><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></g></svg>
             <ul class="nav font-bold text-white-700 flex flex-col font-color-x gap-2 text-xl">
@@ -51,7 +51,7 @@
                 
             </div>
         </div>
-        <div class="middle ml-9 text-white border-x-stone-600 border-2 border-t-0 border-b-0 h-screen flex flex-col">
+        <div class="middle ml-9 text-white border-x-stone-600 border-2 border-t-0 border-b-0 flex flex-col">
             <div class="header flex border-b-stone-600 border-2 border-t-0 border-l-0 border-r-0 font-bold text-base text-center min-h-12">
                 <div class="for-you w-1/2 flex flex-col text-stone-500 align-middle cursor-pointer hover:bg-neutral-900 hover:text-white pt-3 pb-3">
                     For you
@@ -66,7 +66,7 @@
                 <div class="what-happening flex flex-row ml-4 gap-2 mt-4"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="36" height="36" color="white" fill="gray" class="bg-white rounded-full">
                     <path d="M6.57757 15.4816C5.1628 16.324 1.45336 18.0441 3.71266 20.1966C4.81631 21.248 6.04549 22 7.59087 22H16.4091C17.9545 22 19.1837 21.248 20.2873 20.1966C22.5466 18.0441 18.8372 16.324 17.4224 15.4816C14.1048 13.5061 9.89519 13.5061 6.57757 15.4816Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
                     <path d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z" stroke="currentColor" stroke-width="1.5" />
-                </svg> <input class="text-stone-300 border-none text-xl  font-medium bg-black" type="text" placeholder="What is happening?!"> </div>
+                </svg> <input class="text-stone-300 border-none outline-none text-xl  font-medium bg-black" type="text" placeholder="What is happening?!"> </div>
                 <div class="attachment mt-6 flex flex-row ml-14 gap-60">
                     <div class="flex flex-row gap-4">
                         <span class="material-symbols-outlined  text-cyan-500">
@@ -89,18 +89,82 @@
                             </span>
                         
                     </div>
-                    <button class="bg-cyan-800 border-none rounded-full w-fit pt-1 pb-1 pl-4 pr-4 text-mediumfont-bold text-neutral-400 font-bold mb-5 hover:bg-cyan-500 hover:text-white"> 
+                    <button class="bg-cyan-800 border-none rounded-full w-fit pt-1 pb-1 pl-4 pr-4 text-mediumfont-bold text-gray-500 font-bold mb-5 hover:bg-cyan-500 hover:text-white"> 
                         Post
                     </button>
                 </div>
             </div>
+            <div class="others-post mt-3 mb-3 border-l-0 border-t-0 border-r-0 border-b-stone-600 border-2 ">
+                <div class="profile-photo flex flex-row gap-3">
+                    <img src="https://pbs.twimg.com/profile_images/1815749056821346304/jS8I28PL_bigger.jpg" class="rounded-s-full ml-4 elon-photo" width="32px" alt="">
+                    <div class="username flex flex-row ">
+                        <div class="font-bold text-sm hover:cursor-pointer">Elon Musk</div> 
+                        <div class="pt-1 ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" color="rgb(29,155,240)" fill="none">
+                            <path d="M11.5143 2.09327C11.8265 1.96891 12.1735 1.96891 12.4857 2.09327C13.4921 2.49406 13.6887 4.03744 14.8762 4.12336C15.7124 4.18386 16.533 3.48677 17.3721 3.69574C17.7105 3.78003 18.0028 3.99579 18.186 4.29657C18.7472 5.21824 18.0229 6.57292 18.9383 7.33768C19.5743 7.86877 20.6251 7.80004 21.178 8.4511C21.4108 8.72534 21.5252 9.08303 21.4953 9.4437C21.4068 10.5166 20.0389 11.1876 20.3395 12.3439C20.5475 13.1443 21.4253 13.707 21.4953 14.5563C21.5252 14.917 21.4108 15.2747 21.178 15.5489C20.4832 16.3669 18.9808 16.0975 18.5476 17.2062C18.2434 17.9844 18.634 18.9677 18.186 19.7034C18.0028 20.0042 17.7105 20.22 17.3721 20.3043C16.3302 20.5637 15.2727 19.4445 14.2701 20.0758C13.5543 20.5264 13.2978 21.5835 12.4857 21.9067C12.1735 22.0311 11.8265 22.0311 11.5143 21.9067C10.7022 21.5835 10.4457 20.5264 9.72989 20.0758C8.73971 19.4524 7.65213 20.5593 6.62791 20.3043C6.28947 20.22 5.9972 20.0042 5.81405 19.7034C5.25286 18.7818 5.97704 17.427 5.0617 16.6623C4.42582 16.1312 3.37494 16.2 2.82204 15.5489C2.58921 15.2747 2.47484 14.917 2.50465 14.5563C2.57485 13.707 3.4524 13.1443 3.6605 12.3439C3.95808 11.1997 2.59204 10.5009 2.50465 9.4437C2.47484 9.08303 2.58921 8.72534 2.82204 8.4511C3.51676 7.63284 5.01899 7.90253 5.45238 6.79383C5.75662 6.0156 5.36608 5.03227 5.81405 4.29657C5.9972 3.99579 6.28947 3.78003 6.62791 3.69574C7.46705 3.48677 8.28757 4.18387 9.12378 4.12336C10.3113 4.03746 10.5079 2.49406 11.5143 2.09327Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M9 13.3333C9 13.3333 9.875 13.3333 10.75 15C10.75 15 13.5294 10.8333 16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                        
+                        <div class="font-medium text-sm text-gray-500 ml-2">@elonmusk . 23h</div>
+                    </div>
+                </div>
+                
+                <div class="post-description ml-16">
+                    I have a meme
+                </div>
+                <div class="post-content">
+                    <img src="https://pbs.twimg.com/media/GU9O4_ybkAAcDk3?format=jpg&name=small" alt="">
+                </div>
+            </div>
+            <div class="others-post mt-3 mb-3 border-l-0 border-t-0 border-r-0 border-b-stone-600 border-2 ">
+                <div class="profile-photo flex flex-row gap-3">
+                    <img src="https://pbs.twimg.com/profile_images/1815749056821346304/jS8I28PL_bigger.jpg" class="rounded-s-full ml-4 elon-photo" width="32px" alt="">
+                    <div class="username flex flex-row ">
+                        <div class="font-bold text-sm hover:cursor-pointer">Elon Musk</div> 
+                        <div class="pt-1 ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" color="rgb(29,155,240)" fill="none">
+                            <path d="M11.5143 2.09327C11.8265 1.96891 12.1735 1.96891 12.4857 2.09327C13.4921 2.49406 13.6887 4.03744 14.8762 4.12336C15.7124 4.18386 16.533 3.48677 17.3721 3.69574C17.7105 3.78003 18.0028 3.99579 18.186 4.29657C18.7472 5.21824 18.0229 6.57292 18.9383 7.33768C19.5743 7.86877 20.6251 7.80004 21.178 8.4511C21.4108 8.72534 21.5252 9.08303 21.4953 9.4437C21.4068 10.5166 20.0389 11.1876 20.3395 12.3439C20.5475 13.1443 21.4253 13.707 21.4953 14.5563C21.5252 14.917 21.4108 15.2747 21.178 15.5489C20.4832 16.3669 18.9808 16.0975 18.5476 17.2062C18.2434 17.9844 18.634 18.9677 18.186 19.7034C18.0028 20.0042 17.7105 20.22 17.3721 20.3043C16.3302 20.5637 15.2727 19.4445 14.2701 20.0758C13.5543 20.5264 13.2978 21.5835 12.4857 21.9067C12.1735 22.0311 11.8265 22.0311 11.5143 21.9067C10.7022 21.5835 10.4457 20.5264 9.72989 20.0758C8.73971 19.4524 7.65213 20.5593 6.62791 20.3043C6.28947 20.22 5.9972 20.0042 5.81405 19.7034C5.25286 18.7818 5.97704 17.427 5.0617 16.6623C4.42582 16.1312 3.37494 16.2 2.82204 15.5489C2.58921 15.2747 2.47484 14.917 2.50465 14.5563C2.57485 13.707 3.4524 13.1443 3.6605 12.3439C3.95808 11.1997 2.59204 10.5009 2.50465 9.4437C2.47484 9.08303 2.58921 8.72534 2.82204 8.4511C3.51676 7.63284 5.01899 7.90253 5.45238 6.79383C5.75662 6.0156 5.36608 5.03227 5.81405 4.29657C5.9972 3.99579 6.28947 3.78003 6.62791 3.69574C7.46705 3.48677 8.28757 4.18387 9.12378 4.12336C10.3113 4.03746 10.5079 2.49406 11.5143 2.09327Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M9 13.3333C9 13.3333 9.875 13.3333 10.75 15C10.75 15 13.5294 10.8333 16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                        
+                        <div class="font-medium text-sm text-gray-500 ml-2">@elonmusk . 23h</div>
+                    </div>
+                </div>
+                
+                <div class="post-description ml-16">
+                    I have a meme
+                </div>
+                <div class="post-content">
+                    <img src="https://pbs.twimg.com/media/GU9O4_ybkAAcDk3?format=jpg&name=small" alt="">
+                </div>
+            </div>
+            <div class="others-post mt-3 mb-3 border-l-0 border-t-0 border-r-0 border-b-stone-600 border-2 ">
+                <div class="profile-photo flex flex-row gap-3">
+                    <img src="https://pbs.twimg.com/profile_images/1815749056821346304/jS8I28PL_bigger.jpg" class="rounded-s-full ml-4 elon-photo" width="32px" alt="">
+                    <div class="username flex flex-row ">
+                        <div class="font-bold text-sm hover:cursor-pointer">Elon Musk</div> 
+                        <div class="pt-1 ml-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="14px" color="rgb(29,155,240)" fill="none">
+                            <path d="M11.5143 2.09327C11.8265 1.96891 12.1735 1.96891 12.4857 2.09327C13.4921 2.49406 13.6887 4.03744 14.8762 4.12336C15.7124 4.18386 16.533 3.48677 17.3721 3.69574C17.7105 3.78003 18.0028 3.99579 18.186 4.29657C18.7472 5.21824 18.0229 6.57292 18.9383 7.33768C19.5743 7.86877 20.6251 7.80004 21.178 8.4511C21.4108 8.72534 21.5252 9.08303 21.4953 9.4437C21.4068 10.5166 20.0389 11.1876 20.3395 12.3439C20.5475 13.1443 21.4253 13.707 21.4953 14.5563C21.5252 14.917 21.4108 15.2747 21.178 15.5489C20.4832 16.3669 18.9808 16.0975 18.5476 17.2062C18.2434 17.9844 18.634 18.9677 18.186 19.7034C18.0028 20.0042 17.7105 20.22 17.3721 20.3043C16.3302 20.5637 15.2727 19.4445 14.2701 20.0758C13.5543 20.5264 13.2978 21.5835 12.4857 21.9067C12.1735 22.0311 11.8265 22.0311 11.5143 21.9067C10.7022 21.5835 10.4457 20.5264 9.72989 20.0758C8.73971 19.4524 7.65213 20.5593 6.62791 20.3043C6.28947 20.22 5.9972 20.0042 5.81405 19.7034C5.25286 18.7818 5.97704 17.427 5.0617 16.6623C4.42582 16.1312 3.37494 16.2 2.82204 15.5489C2.58921 15.2747 2.47484 14.917 2.50465 14.5563C2.57485 13.707 3.4524 13.1443 3.6605 12.3439C3.95808 11.1997 2.59204 10.5009 2.50465 9.4437C2.47484 9.08303 2.58921 8.72534 2.82204 8.4511C3.51676 7.63284 5.01899 7.90253 5.45238 6.79383C5.75662 6.0156 5.36608 5.03227 5.81405 4.29657C5.9972 3.99579 6.28947 3.78003 6.62791 3.69574C7.46705 3.48677 8.28757 4.18387 9.12378 4.12336C10.3113 4.03746 10.5079 2.49406 11.5143 2.09327Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" />
+                            <path d="M9 13.3333C9 13.3333 9.875 13.3333 10.75 15C10.75 15 13.5294 10.8333 16 10" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></div>
+                        
+                        <div class="font-medium text-sm text-gray-500 ml-2">@elonmusk . 23h</div>
+                    </div>
+                </div>
+                
+                <div class="post-description ml-16">
+                    I have a meme
+                </div>
+                <div class="post-content">
+                    <img src="https://pbs.twimg.com/media/GU9O4_ybkAAcDk3?format=jpg&name=small" alt="">
+                </div>
+            </div>
         </div>
-        <div class="right w-full text-white flex flex-col">
+        <div class="right w-full text-white flex flex-col snap-y">
             <div class="search flex flex-row bg-zinc-800 rounded-full mt-1 ml-8 pt-2.5 pb-2.5 pl-4 pr-10 gap-5">
                 <span class="material-symbols-outlined text-zinc-700 ">
                     search
                     </span>
-                <input type="text" placeholder="Search" class="font-thin text-zinc-700 bg-zinc-800">
+                <input type="text" placeholder="Search" class="
+               outline-none font-thin text-zinc-700 bg-zinc-800">
             </div>
             <div class="premium-card flex flex-col rounded-3xl border-stone-600 border-2 pt-2.5 pl-3.5 ml-8 mt-6">
                 <div class="premium-heading text-xl font-extrabold mb-2">
@@ -109,15 +173,110 @@
                 <div class="premium-content mb-2 mr-10">
                     Subscribe to unlock new features and if eligible, receive a share of ads revenue.
                 </div>
-                <button class="permium-btn bg-cyan-500 border-none rounded-full w-40 pt-3 pb-3 pl-24 pr-24 text-base mb-3.5 font-medium text-whitehover:bg-teal-600">
+                <button class="permium-btn bg-cyan-500 border-none rounded-full w-28 pt-2 pb-2 text-base mb-3.5 font-medium text-white hover:bg-teal-600">
                     Subsrcibe
                 </button>
             </div>
-            <div class="whats-happening">
+            <div class="whats-happening flex flex-col  rounded-3xl border-stone-600 border-2 pt-2.5 ml-8 mt-6">
+                <div class="heading-of-whats-happening font-extrabold text-xl pl-3.5">
+                    Whats happening?
+                </div>
+                <div class="main-card flex flex-col mt-2 mb-2 pl-3.5 hover:bg-zinc-900 hover:cursor-pointer">
+                    <div class=" font-bold text-sm ">
+                        #BanegaSwasthIndia
+                    </div>
+                    <div>
+                        India's longest running public health campaign culminates season 10
+                    </div>
+                </div>
+                <div class="trending-card mt-2 mb-2 hover:bg-zinc-900 pl-3.5
+                hover:cursor-pointer">
+                    <div class="mini-heading font-normal text-sm text-gray-500 ">
+                        Politics . Trending
+                    </div>
+                    <div class="hastag font-bold text-lg text-white">
+                        #justicefornoone
+                    </div>
+                    <div class="post-count  font-normal text-sm text-gray-500">
+                        75.6K Posts
+                    </div>
+                </div>
+                <div class="trending-card mt-2 mb-2 hover:bg-zinc-900 pl-3.5 hover:cursor-pointer">
+                    <div class="mini-heading font-normal text-sm text-gray-500 ">
+                        Politics . Trending
+                    </div>
+                    <div class="hastag font-bold text-lg text-white">
+                        #justicefornoone
+                    </div>
+                    <div class="post-count  font-normal text-sm text-gray-500">
+                        75.6K Posts
+                    </div>
+                </div>
+                <div class="trending-card mt-2 mb-2 hover:bg-zinc-900 pl-3.5 hover:cursor-pointer">
+                    <div class="mini-heading font-normal text-sm text-gray-500 ">
+                        Politics . Trending
+                    </div>
+                    <div class="hastag font-bold text-lg text-white">
+                        #justicefornoone
+                    </div>
+                    <div class="post-count  font-normal text-sm text-gray-500">
+                        75.6K Posts
+                    </div>
+                </div>
+                <div class="show-more font-normal text-sm hover:bg-zinc-900 pl-3.5 hover:cursor-pointer rounded-b-3xl pt-1 text-cyan-500 max-h-20 min-h-10 justify-center">
+                    Show More
+                </div>
 
             </div>
-            <div class="who-to-follow">
-
+            <div class="who-to-follow flex flex-col  rounded-3xl border-stone-600 border-2 pt-2.5 ml-8 mt-6">
+                <div class="who-to-follow-heading font-extrabold text-xl pl-3.5">
+                    Who to follow
+                </div>
+                <div class="follow-card mt-2 mb-2 hover:bg-zinc-900 pl-3.5 hover:cursor-pointer flex flex-row gap-2">
+                    <img src="https://pbs.twimg.com/profile_images/1604943357750419465/wk5BAmKG_bigger.png" class="rounded-sm" width="40px">
+                    <div class="flex flex-col font-bold text-sm">
+                        <div class="font-bold text-sm">
+                            SportsCentre
+                        </div>
+                        <div class="font-normal text-sm text-gray-500">
+                            @SportsCentre
+                        </div>
+                    </div>
+                    <div class="follow-btn ml-24 pt-2 pb-2 pl-5 pr-5 font-bold text-sm bg-white text-black rounded-full self-end">
+                        Follow
+                    </div>
+                </div>
+                <div class="follow-card mt-2 mb-2 hover:bg-zinc-900 pl-3.5 hover:cursor-pointer flex flex-row gap-2">
+                    <img src="https://pbs.twimg.com/profile_images/1604943357750419465/wk5BAmKG_bigger.png" class="rounded-sm" width="40px">
+                    <div class="flex flex-col font-bold text-sm">
+                        <div class="font-bold text-sm">
+                            SportsCentre
+                        </div>
+                        <div class="font-normal text-sm text-gray-500">
+                            @SportsCentre
+                        </div>
+                    </div>
+                    <div class="follow-btn ml-24 pt-2 pb-2 pl-5 pr-5 font-bold text-sm bg-white text-black rounded-full self-end">
+                        Follow
+                    </div>
+                </div>
+                <div class="follow-card mt-2 mb-2 hover:bg-zinc-900 pl-3.5 hover:cursor-pointer flex flex-row gap-2">
+                    <img src="https://pbs.twimg.com/profile_images/1604943357750419465/wk5BAmKG_bigger.png" class="rounded-sm" width="40px">
+                    <div class="flex flex-col font-bold text-sm">
+                        <div class="font-bold text-sm">
+                            SportsCentre
+                        </div>
+                        <div class="font-normal text-sm text-gray-500">
+                            @SportsCentre
+                        </div>
+                    </div>
+                    <div class="follow-btn ml-24 pt-2 pb-2 pl-5 pr-5 font-bold text-sm bg-white text-black rounded-full self-end">
+                        Follow
+                    </div>
+                </div>
+                <div class="show-more font-normal text-sm hover:bg-zinc-900 pl-3.5 hover:cursor-pointer rounded-b-3xl pt-1 text-cyan-500 max-h-20 min-h-10 justify-center">
+                    Show More
+                </div>
             </div>
         </div>
     </div>
